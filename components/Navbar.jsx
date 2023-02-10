@@ -11,22 +11,24 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <Flex
-      minWidth="max-content"
-      alignItems="center"
-      gap="2"
-      mt={10}
-      bg="red.300"
-    >
+    <Flex minWidth="max-content" alignItems="center" gap="2" mt={10}>
       <Box p="2">
         <Heading size="md">Jorge Contreras</Heading>
       </Box>
       <Spacer />
       <HStack gap="8">
-        <Text>About</Text>
-        <Text>Projects</Text>
-        <Text>Contact Me</Text>
-        <Text>Resume</Text>
+        <Text as="b" cursor="pointer">
+          About
+        </Text>
+        <Text as="b" cursor="pointer">
+          Projects
+        </Text>
+        <Text as="b" cursor="pointer">
+          Contact Me
+        </Text>
+        <Text as="b" cursor="pointer">
+          Resume
+        </Text>
       </HStack>
     </Flex>
   );
