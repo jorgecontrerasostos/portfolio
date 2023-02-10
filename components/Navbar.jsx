@@ -2,23 +2,32 @@ import {
   Box,
   Flex,
   Spacer,
-  Button,
+  Text,
   ButtonGroup,
   Heading,
+  HStack,
 } from "@chakra-ui/react";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <Flex minWidth="max-content" alignItems="center" gap="2" mt="14">
+    <Flex
+      minWidth="max-content"
+      alignItems="center"
+      gap="2"
+      mt={10}
+      bg="red.300"
+    >
       <Box p="2">
-        <Heading size="md">Chakra App</Heading>
+        <Heading size="md">Jorge Contreras</Heading>
       </Box>
       <Spacer />
-      <ButtonGroup gap="2">
-        <Button colorScheme="teal">Sign Up</Button>
-        <Button colorScheme="teal">Log in</Button>
-      </ButtonGroup>
+      <HStack gap="8">
+        <Text>About</Text>
+        <Text>Projects</Text>
+        <Text>Contact Me</Text>
+        <Text>Resume</Text>
+      </HStack>
     </Flex>
   );
 };

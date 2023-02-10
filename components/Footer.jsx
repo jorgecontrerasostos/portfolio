@@ -7,8 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { ReactNode } from "react";
+import { FaInstagram, FaGithub, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -37,7 +36,7 @@ const SocialButton = ({ children, label, href }) => {
 export default function SmallWithSocial() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
+      bg={useColorModeValue("white", "white")}
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container
@@ -50,12 +49,12 @@ export default function SmallWithSocial() {
         align={{ base: "center", md: "center" }}
       >
         <Text>Jorge Contreras 2022</Text>
-        <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
+        <Stack direction={"row"} spacing={8}>
+          <SocialButton label={"Linkedin"} href={"#"}>
+            <FaLinkedin />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
+          <SocialButton label={"Github"} href={"#"}>
+            <FaGithub />
           </SocialButton>
           <SocialButton label={"Instagram"} href={"#"}>
             <FaInstagram />
